@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remember Me</title>
+
+    <!-- Font: Barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 3D scene goes here (Three.js canvas) -->
+    <div id="stage"></div>
+
+    <!-- Soft edge shading (delete if you don't want it) -->
+    <div class="vignette"></div>
+
+    <!-- Black cinema bars (slide in during dialogue) -->
+    <div class="bars"><span></span><span></span></div>
+
+    <!-- Top bar, current screen, archive pop-up, placeholder tag, fade -->
+    <div id="hud"></div>
+    <div id="ui"></div>
+    <div id="archive" class="archive hidden"></div>
+    <div id="dev" class="dev hidden"></div>
+    <div id="fade" class="fade on"><span>Loading</span></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
